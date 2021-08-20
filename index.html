@@ -13,17 +13,18 @@
          crossorigin="anonymous"
       />
 
-      <link rel="stylesheet" href="CSS/styles.css" />
    </head>
    <body>
       <!-- main section start -->
       <main>
+        
          <section class="container">
-            <div class="row description">
-               <div class="col-6">
-                  <img width="350px" src="images/mac.png" alt="" />
+            <div class="row" style="padding: 100px 100px;">
+                <!-- Customize Blue 24-inch iMac with Apple M1 chip Details Field -->
+               <div class="col-lg-6 col-12">
+                  <img class="ms-5" width="350px" src="images/mac.png" alt="" />
                </div>
-               <div class="col-6">
+               <div class="col-lg-6 col-md-12">
                   <div class="">
                      <h1 class="">
                         Customize your Blue 24-inch iMac with Apple M1 chip
@@ -36,6 +37,7 @@
                         English.
                      </p>
                   </div>
+                  <!-- Memory Feild -->
                   <div>
                      <h5>Memory</h5>
                      <div class="d-flex">
@@ -51,6 +53,7 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Storgae Feild -->
                   <div class="my-5">
                      <h5>Storage</h5>
                      <div class="d-flex">
@@ -71,6 +74,7 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Delivery Option Field -->
                   <div>
                      <h5>Choose your delivery option</h5>
                      <div class="d-flex">
@@ -91,9 +95,88 @@
                      </div>
                   </div>
                </div>
+               <!-- Price Inforamtion Field -->
+               <div class=" my-5 ms-3" style="padding-left: 556px;">
+                  <div class="col-10">
+                     <table class="table">
+                        <tbody>
+                           <tr>
+                              <th scope="row">Best Price</th>
+                              <td id="best-price" class="fw-bold">
+                                 $<span>1299</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Extra Memory Cost</th>
+                              <td id="extra-memory" class="fw-bold">
+                                 $<span>0</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Extra Storage Cost</th>
+                              <td id="extra-storage" class="fw-bold">
+                                 $<span>0</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th
+                                 style="border-bottom: 3px solid black"
+                                 ;
+                                 scope="row"
+                              >
+                                 Delivery Charge
+                              </th>
+                              <td
+                                 style="border-bottom: 3px solid black"
+                                 ;
+                                 id="Delivery charge"
+                                 class="fw-bold"
+                              >
+                                 $<span>0</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Total Price</th>
+                              <td id="extra-storage" class="fw-bold">
+                                 $<span>1299</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <!--End of Price Inforamtion Field -->
+               </div>
+               <!-- Promo Code Field -->
+               <div class="promo-details" style="padding-left: 580px">
+                  <h5>Add Promo Code</h5>
+                  <div class="input-group">
+                     <input
+                        type="text"
+                        class="form-control w-50"
+                        id=""
+                        placeholder="Add Your Promo Code"
+                     />
+                     <div class="input-group-append ms-4"></div>
+                        <button type="button" class="btn btn-danger btn-lg ">
+                           Apply
+                        </button>
+                     </div>
+                  </div>
+                  <hr class="my-5">
+                  <!-- Total  Price Feild-->
+                  <div> 
+                      <h1 class="text-center" >Total: $<span>1299</span></h1>
+                    </div>
+                 
+               </div>
+               
             </div>
          </section>
+         <!-- Main Section End -->
+         
       </main>
+
+      
       <!-- JavaScript File -->
       <script src="JS/app.js"></script>
       <!-- Bootstrap Script -->
