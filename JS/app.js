@@ -35,21 +35,21 @@ const promoInput = document.getElementById("promo-input");
 updating price according to the extra memory,
 extra storage & delivery charge
 -----------------------------------------  */
-function updatePrice(type) {
+function updatePrice(type, price) {
    if (type.includes("8GB")) {
-      extraMemory.innerText = "0";
+      extraMemory.innerText = price;
    } else if (type.includes("16GB")) {
-      extraMemory.innerText = "180";
+      extraMemory.innerText = price;
    } else if (type.includes("256GB")) {
-      extraStorage.innerText = "0";
+      extraStorage.innerText = price;
    } else if (type.includes("512GB")) {
-      extraStorage.innerText = "100";
+      extraStorage.innerText = price;
    } else if (type.includes("1TB")) {
-      extraStorage.innerText = "180";
+      extraStorage.innerText = price;
    } else if (type.includes("prime")) {
-      deliveryCharge.innerText = "0";
+      deliveryCharge.innerText = price;
    } else if (type.includes("fast")) {
-      deliveryCharge.innerText = "20";
+      deliveryCharge.innerText = price;
    }
 }
 /*--------------------
@@ -88,36 +88,36 @@ function promoApply() {
 adding event handler
 ---------------------- */
 eightGbMemory.addEventListener("click", function () {
-   updatePrice("8GB");
+   updatePrice("8GB", "0");
    updateTotalPrice();
 });
 
 sixteenGbMemory.addEventListener("click", function () {
-   updatePrice("16GB");
+   updatePrice("16GB", "180");
    updateTotalPrice();
 });
 
 twoHundredFiftySixSSd.addEventListener("click", function () {
-   updatePrice("256GB");
+   updatePrice("256GB", "0");
    updateTotalPrice();
 });
 
 fiveHundredTwelveSSd.addEventListener("click", function () {
-   updatePrice("512GB");
+   updatePrice("512GB", "100");
    updateTotalPrice();
 });
 
 oneTeraByteSsd.addEventListener("click", function () {
-   updatePrice("1TB");
+   updatePrice("1TB", "180");
    updateTotalPrice();
 });
 
 primeDelivery.addEventListener("click", function () {
-   updatePrice("prime");
+   updatePrice("prime", "0");
    updateTotalPrice();
 });
 
 fastDelivery.addEventListener("click", function () {
-   updatePrice("fast");
+   updatePrice("fast", "20");
    updateTotalPrice();
 });
