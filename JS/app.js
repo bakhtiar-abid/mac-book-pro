@@ -73,10 +73,11 @@ applying promo code
 function promoApply() {
    const promoInputValue = promoInput.value;
    if (promoInputValue == "stevekaku") {
-      const promoTotal =
-         parseFloat(totalPrice.innerText) - parseFloat(total.innerText) * 0.2;
+      const totalPriceAmount = parseFloat(totalPrice.innerText);
+      const promoTotal = totalPriceAmount - totalPriceAmount * 0.2;
       total.innerText = promoTotal;
-      promoCodeApply.classList.add("disabled");
+
+      // promoCodeApply.classList.add("disabled");
    } else {
       alert("Your Promo Code is not valid, please try again");
    }
